@@ -80,16 +80,16 @@ h6 {
 }
 .image-container {
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.5;
   position: relative;
   top: 23%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.image-logo{
-    width: 70px;
-    height: auto;
+.image-logo {
+  width: 70px;
+  height: auto;
 }
 .logo-text {
   color: var(--left-text-color);
@@ -99,7 +99,6 @@ h6 {
 
 .right {
   width: 70%;
-  background-color: black;
 }
 
 .credit {
@@ -110,10 +109,72 @@ h6 {
   justify-content: center;
   width: inherit;
 }
-.credit-text{
-    font-size: 14px;
+.credit-text {
+  font-size: 12.2px;
 }
 
-a{
-    color: var(--left-text-color);
+a:not(.login) {
+  color: var(--left-text-color);
+}
+
+.description {
+  background-color: #f9fafb;
+  height: 35%;
+  padding: 80px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration {
+  background-color: #fff;
+  height: 30%;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.registration-title{
+  color: #212b39;
+  font-size: 16px;
+}
+.registration form{
+    display: flex;
+    font-size: 10px;
+    gap: 60px;
+    color: #242e3b;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.registration form div{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.input{
+  width: 200px;
+}
+.submission {
+  background-color: #f9fafb;
+  height: 35%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.submit-button{
+  color: #fff;
+  background-color: #596d48;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 10px;
+  align-self: flex-start;
+}
+.login{
+  font-size: 14px;
+}
+.login a{
+  color: #596d48;
+  font-weight: 600;
 }
