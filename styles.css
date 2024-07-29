@@ -1,9 +1,15 @@
 /* Modern CSS Reset */
 
+:root {
+  --left-text-color: #fefefe;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 /*
@@ -11,6 +17,9 @@
 */
 * {
   margin: 0;
+}
+a {
+  text-decoration: none;
 }
 /*
   Typographic tweaks!
@@ -24,26 +33,87 @@ body {
 /*
   5. Improve media defaults
 */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 /*
   6. Remove built-in form typography styles
 */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 /*
   7. Avoid text overflows
 */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
-/*
-  8. Create a root stacking context
-*/
-#root, #__next {
-  isolation: isolate;
+
+@font-face {
+  font-family: "NorseBold";
+  src: url(./assets/fonts/Norse-Bold.otf);
 }
 
+.container {
+  min-height: 100vh;
+  display: flex;
+}
+
+.left {
+  width: 30%;
+  background-image: url(./assets/images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+}
+.image-container {
+  background-color: black;
+  opacity: 0.6;
+  position: relative;
+  top: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-logo{
+    width: 70px;
+    height: auto;
+}
+.logo-text {
+  color: var(--left-text-color);
+  font-family: "NorseBold", sans-serif;
+  font-size: 70px;
+}
+
+.right {
+  width: 70%;
+  background-color: black;
+}
+
+.credit {
+  color: var(--left-text-color);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: inherit;
+}
+.credit-text{
+    font-size: 14px;
+}
+
+a{
+    color: var(--left-text-color);
+}
